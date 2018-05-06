@@ -1,4 +1,4 @@
-package com.valoyes.springjunit.service;
+package com.valoyes.springjunit.service.test;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

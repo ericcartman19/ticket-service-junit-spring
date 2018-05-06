@@ -7,6 +7,11 @@ public class Ticket {
 	private String phone;
 
 
+	public Ticket(String passengerName, String phone) {
+		this.passengerName = passengerName;
+		this.phone = phone;
+	}
+
 	public String getPassengerName() {
 		return passengerName;
 	}
