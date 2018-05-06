@@ -6,6 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import com.valoyes.springjunit.dao.TicketDAO;
 
@@ -18,6 +19,9 @@ public class TicketServiceImplTest {
 	@Mock
 	TicketDAO dao;
 	
+	@Autowired
+	private TicketServiceImpl service;
+	
 	@Before
 	public void setup() {
 		MockitoAnnotations.initMocks(this);
@@ -25,9 +29,6 @@ public class TicketServiceImplTest {
 	
 	@Test
 	public void buyTickets_ShouldReturnAValidValue() {
-
-		// given
-		TicketServiceImpl service = new TicketServiceImpl();
 		
 		// when
 		int resultado = service.buyTicket(PASSENGER_NAME, PASSENGER_PHONE);
