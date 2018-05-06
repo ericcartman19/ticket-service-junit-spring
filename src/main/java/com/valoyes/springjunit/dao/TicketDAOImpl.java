@@ -1,7 +1,10 @@
 package com.valoyes.springjunit.dao;
 
+import org.springframework.stereotype.Component;
+
 import com.valoyes.springjunit.dto.Ticket;
 
+@Component
 public class TicketDAOImpl implements TicketDAO{
 
 	@Override
